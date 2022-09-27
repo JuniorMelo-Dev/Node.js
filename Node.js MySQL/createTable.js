@@ -22,6 +22,7 @@ var con = mysql.createConnection({
 //       });
 // });
 
+// Criando PK_id para Tabela
 con.connect(function(err) {
       if (err) throw err;
       console.log("Connected");

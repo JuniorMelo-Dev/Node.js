@@ -20,7 +20,7 @@ var con = mysql.createConnection({
 // });
 
 //Conexão e inserção de multiplas linhas
-// con.connect(function(err) {
+//con.connect(function(err) {
 //       if (err) throw err;
 //       console.log("Connected!");
 //       var sql = "INSERT INTO customers (name, address) VALUES ?";
@@ -47,6 +47,6 @@ con.connect(function(err) {
       var sql = "INSERT INTO customers (name, address) VALUES ('Luana', 'Rua dos Bandeirantes, 881')";
       con.query(sql, function (err, result) {
             if (err) throw err;
-            console.log("1 record inserted, ID: " + result.insertId);
+            console.log("1 record inserted, ID: " + result.insertID);
       });
 });
